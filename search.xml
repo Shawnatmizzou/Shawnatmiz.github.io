@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[发布新文章]]></title>
+    <url>%2F2019%2F09%2F01%2F%E5%8F%91%E5%B8%83%E6%96%B0%E6%96%87%E7%AB%A0%2F</url>
+    <content type="text"><![CDATA[1. 新建一篇文章(1) 在hexo博客目录下，右键文件夹进入Git Bash here命令窗口中，输入一下命令：hexo new &quot;在Hexo博客中发布文章&quot;(2) 在博客目录下的source/posts/文件夹下，可以看到已经生成的标题为在Hexo博客中发布文章.md的博客markdown文件(3) 在此markdown文件中即可编辑自己的博文 2.给文章添加分类和标题在此文件中设置tags和categories属性： 1234567title: 在Hexo博客中发布文章date: 2019-08-18 13:44:10tags:- git //添加多个标签- github- 博客categories: 计算机技术 3. 启动服务器，本地测试hexo s 4. 添加阅读全文按钮方法一：在markdown文章任意位置添加如下内容即可&lt;!--more--&gt; 方法二：打开主题配置文件_config.yml，找到auto_excerpt进行修改 123auto_excerpt: enable: true length: 150 //代表显示摘要所截取字符长度 这两种方法在博客首页显示效果不一样，需要根据需要选择。 5. 博文中添加图片(1) 在hexo目录下，打开Git bash here，安装插件：npm install hexo-asset-img --save(2) 在hexo\source目录下新建一个img文件夹，把图片防治在里面；(3) 在.md文件中引用图片：![header](img/header.jpg) 6. 发布到Github上(1) 博文在本地预览无误后，在Git Bash命令窗口执行以下命令：hexo clean &amp;&amp; hexo g &amp;&amp; hexo d (2) 在浏览器中访问自己的博客域名，即可浏览到刚刚发布的文章]]></content>
+      <categories>
+        <category>计算机技术</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F07%2F14%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
